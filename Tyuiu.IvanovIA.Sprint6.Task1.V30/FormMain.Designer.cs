@@ -195,7 +195,7 @@
             MaximizeBox = false;
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Спринт 6 | Таск 1 | Вариант 14 | Чигуров М. В. ";
+            Text = "Спринт 6 | Таск 1 | Вариант 30 | Иванов И.А. ";
             groupBoxСondition_CMV.ResumeLayout(false);
             groupBoxСondition_CMV.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_CMV).EndInit();
