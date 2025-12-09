@@ -13,13 +13,13 @@ namespace Tyuiu.IvanovIA.Sprint6.Task3.V3.Lib
 
             for (int i = 0; i < rows; i++)
             {
-                thirdColumn[i] = matrix[i, 2];
+                thirdColumn[i] = matrix[i,1];
             }
             Array.Sort(thirdColumn);
 
             for (int i = 0; i < rows; i++)
             {
-                matrix[i, 2] = thirdColumn[i];
+                matrix[i, 1] = thirdColumn[i];
             }
             return matrix;
         }
