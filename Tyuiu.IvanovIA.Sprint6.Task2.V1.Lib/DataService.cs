@@ -9,7 +9,7 @@ namespace Tyuiu.IvanovIA.Sprint6.Task2.V1.Lib
             int index = 0;
             for (int x = startValue; x <= stopValue; x++)
             {
-                result[index] = (Math.Cos(x)) + ((Math.Sin(x)) / (2 - 2*x)) - (4 * x);
+                result[index] = Math.Round((Math.Cos(x)) + ((Math.Sin(x)) / (2 - 2*x)) - (4 * x),2);
                 if (2 - 2 * x == 0) 
                 {
                     result[index] = 0;
