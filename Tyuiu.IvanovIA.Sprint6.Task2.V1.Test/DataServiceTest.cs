@@ -1,5 +1,5 @@
-﻿using Tyuiu.IvanovIA.Sprint6.Task1.V30.Lib;
-namespace Tyuiu.IvanovIA.Sprint6.Task1.V30.Test
+﻿using Tyuiu.IvanovIA.Sprint6.Task2.V1.Lib;
+namespace Tyuiu.IvanovIA.Sprint6.Task2.V1.Test
 {
     [TestClass]
     public sealed class DataServiceTest
