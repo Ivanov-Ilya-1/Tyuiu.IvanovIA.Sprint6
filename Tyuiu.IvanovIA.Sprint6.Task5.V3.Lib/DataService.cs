@@ -8,29 +8,31 @@ namespace Tyuiu.IvanovIA.Sprint6.Task5.V3.Lib
 
         public double[] LoadFromDataFile(string path)
         {
-            len = 0;
+            List<double> result = new List<double>();
+
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    len++;
+                    line = line.Trim();
+
+                    // Проверяем, содержит ли строка запятую
+                    if (line.Contains(','))
+                    {
+                        // Заменяем запятую на точку для парсинга
+                        string normalized = line.Replace(',', '.');
+
+                        if (double.TryParse(normalized, NumberStyles.Any,
+                            CultureInfo.InvariantCulture, out double number))
+                        {
+                            result.Add(number);
+                        }
+                    }
                 }
             }
 
-            double[] res = new double[len];
-            int i = 0;
-            using (StreamReader reader = new StreamReader(path))
-            {
-                string line;
-                while ((line = reader.ReadLine()) != null)
-                {
-                    res[i] = Math.Round(Convert.ToDouble(line), 3);
-                    i++;
-                }
-            }
-            res = res.Where(x => Math.Abs(x % 10) != 0).ToArray();
-            return res;
+            return result.ToArray();
         }
     }
 }
