@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using System.Xml.Linq;
 using static System.Net.Mime.MediaTypeNames;
-
+using Tyuiu.IvanovIA.Sprint6.Task5.V3.Lib;
 namespace Tyuiu.IvanovIA.Sprint6.Task5.V3
 {
     partial class FormMain
