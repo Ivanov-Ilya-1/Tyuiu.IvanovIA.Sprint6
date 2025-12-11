@@ -28,7 +28,7 @@ namespace Tyuiu.IvanovIA.Sprint6.Task5.V3.Lib
                 }
             }
 
-            numsArray = numsArray.Where(val => val % 5 != 0).ToArray();
+            numsArray = numsArray.Where(val => val % 10 != 0).ToArray();
 
             return numsArray;
         }
